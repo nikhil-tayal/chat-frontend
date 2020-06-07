@@ -1,0 +1,41 @@
+.chat__wrapper{
+    padding: 10px;
+    position: relative;
+    min-height: 100vh;
+    background-color: #00cdbe;
+    .bottom__button{
+        position: absolute;
+        bottom: 10px;
+    }
+}
+
+.sign-in__container{
+    width: 30%;
+    border: 1px solid blanchedalmond;
+    background-color: #00cdbe;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 5px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    label{
+        color: #1d1d1d;
+        font-size: 24px;
+        margin-top: 20px;
+    }
+    input{
+        padding: 10px 5px;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        margin-top: 5px;
+    }
+    button{
+        color: #1d1d1d;
+        margin-top: 50px;
+        padding: 10px;
+    }
+}

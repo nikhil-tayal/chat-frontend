@@ -1,0 +1,7 @@
+.chat__wrapper {
+  padding: 10px;
+  position: relative; }
+  .chat__wrapper .bottom__button {
+    position: absolute;
+    bottom: 0;
+    left: 0; }
