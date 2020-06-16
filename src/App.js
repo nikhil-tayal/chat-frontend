@@ -37,6 +37,7 @@ function App() {
   //     });
   //   });
   // };
+  console.log("app render");
   return (
     <div className="App">
       {/* <input type="text" value={message} onChange={(e) => setMessage(e.target.value)} />

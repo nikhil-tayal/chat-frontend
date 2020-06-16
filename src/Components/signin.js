@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState , useEffect } from "react";
 import io from "socket.io-client";
+import {socket} from '../Utils/sockets'
 
-const socket = io("http://localhost:4000");
 export default function SignIn(props) {
   const [name, setName] = useState("");
   const [room, setRoom] = useState("");
@@ -11,7 +11,9 @@ export default function SignIn(props) {
       console.log(props);
       props.history.push(`/chats/${name}/${room}`);
     });
+    
   };
+  
   return (
     <div className="sign-in__container">
       <label htmlFor="">Name</label>

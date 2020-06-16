@@ -1,15 +1,73 @@
-.chat__wrapper{
+.chat__wrapper {
     padding: 10px;
     position: relative;
     min-height: 100vh;
     background-color: #00cdbe;
-    .bottom__button{
+
+    .bottom__button {
         position: absolute;
         bottom: 10px;
     }
+
+    .messages__container {
+        .message-sender__name {
+            font-size: 20px;
+            color: #1d1d1d;
+            text-transform: capitalize;
+            font-weight: bold;
+
+            .message-time {
+                font-size: 12px;
+                color: #bbcbcb;
+                margin-left: 5px;
+                text-transform: none;
+            }
+
+        }
+
+        .message {
+            color: #fff;
+            position: relative;
+            margin-left: 20px;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #A8DDFD;
+            width: 200px;
+            height: 50px;
+            text-align: left;
+            font: 400 .9em 'Open Sans', sans-serif;
+            border: 1px solid #97C6E3;
+            border-radius: 10px;
+
+            &:after {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-top: 15px solid #A8DDFD;
+                border-left: 15px solid transparent;
+                border-right: 15px solid transparent;
+                top: 0;
+                left: -15px;
+            }
+
+            &:before {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-top: 17px solid #97C6E3;
+                border-left: 16px solid transparent;
+                border-right: 16px solid transparent;
+                top: -1px;
+                left: -17px;
+            }
+        }
+    }
+
 }
 
-.sign-in__container{
+.sign-in__container {
     width: 30%;
     border: 1px solid blanchedalmond;
     background-color: #00cdbe;
@@ -20,22 +78,30 @@
     position: absolute;
     top: 40%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    label{
+    transform: translate(-50%, -50%);
+
+    label {
         color: #1d1d1d;
         font-size: 24px;
         margin-top: 20px;
     }
-    input{
+
+    input {
         padding: 10px 5px;
         border-radius: 5px;
         outline: none;
         border: none;
         margin-top: 5px;
     }
-    button{
+
+    button {
         color: #1d1d1d;
         margin-top: 50px;
         padding: 10px;
     }
+}
+
+.auto-scroll {
+    height: 90vh;
+    width: 400px
 }
